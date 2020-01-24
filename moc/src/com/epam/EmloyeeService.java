@@ -5,6 +5,7 @@ import java.util.List;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
 
 
 @Path(value = "/abc")
@@ -15,6 +16,7 @@ public class EmloyeeService {
 	 * }
 	 */
 	@GET
+	@Produces(value = "application/json")
 	public List<Employee> find(){
 		
 		ArrayList<Employee> list = new ArrayList<Employee>();
