@@ -10,8 +10,11 @@ public class Employee {
 	private Double salary;
 	
 	
-	public Employee(int i, String string, double d) {
+	public Employee( Integer eno, String name , Double salary) {
 		super();
+		this.eno=eno;
+		this.name=name;
+		this.salary=salary;
 	}
 	public Integer getEno() {
 		return eno;
